@@ -6,7 +6,7 @@ setup:
 	@lefthook install
 
 clean:
-	@rm -r dist/ 2> /dev/null || true
+	@rm -rf dist/
 
 build:
 	@go build -o dist/app
