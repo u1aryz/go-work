@@ -9,6 +9,7 @@ linters:
     - unused
     - forbidigo
     - lll
+    - gofmt
 
 linters-settings:
   forbidigo:
