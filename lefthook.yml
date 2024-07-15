@@ -1,0 +1,6 @@
+pre-commit:
+  commands:
+    check:
+      glob: "*.{go}"
+      run: golangci-lint run
+      stage_fixed: true

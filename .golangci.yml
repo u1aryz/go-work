@@ -1,0 +1,26 @@
+linters:
+  disable-all: true
+  enable:
+    - errcheck
+    - gosimple
+    - govet
+    - ineffassign
+    - staticcheck
+    - unused
+    - forbidigo
+    - lll
+
+linters-settings:
+  forbidigo:
+    forbid:
+      - os.Exit
+      - log.Fatal.*
+
+  lll:
+    line-length: 150
+
+issues:
+  exclude-rules:
+    - path: main.go
+      linters:
+        - forbidigo
