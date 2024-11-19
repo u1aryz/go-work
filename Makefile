@@ -2,7 +2,7 @@ all: clean lint build
 
 setup:
 	go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.62.0
-	go install github.com/evilmartians/lefthook@v1.8.2
+	go install github.com/evilmartians/lefthook@v1.8.4
 	lefthook install
 
 clean:
