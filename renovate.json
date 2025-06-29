@@ -1,17 +1,11 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:best-practices"
-  ],
+  "extends": ["config:best-practices"],
   "customManagers": [
     {
       "customType": "regex",
-      "managerFilePatterns": [
-        "/^Makefile$/"
-      ],
-      "matchStrings": [
-        "go install (?<depName>[^@]+?)@(?<currentValue>.+)\n"
-      ],
+      "managerFilePatterns": ["\\.mise\\.toml$"],
+      "matchStrings": ["\"go install (?<depName>[^@]+?)@(?<currentValue>.+)\""],
       "datasourceTemplate": "go"
     }
   ]

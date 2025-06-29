@@ -1,27 +1,42 @@
+version: "2"
 linters:
-  disable-all: true
+  default: none
   enable:
     - errcheck
-    - gosimple
+    - forbidigo
     - govet
     - ineffassign
+    - lll
     - staticcheck
     - unused
-    - forbidigo
-    - lll
+  settings:
+    forbidigo:
+      forbid:
+        - pattern: os.Exit
+        - pattern: log.Fatal.*
+    lll:
+      line-length: 150
+  exclusions:
+    generated: lax
+    presets:
+      - comments
+      - common-false-positives
+      - legacy
+      - std-error-handling
+    rules:
+      - linters:
+          - forbidigo
+        path: main.go
+    paths:
+      - third_party$
+      - builtin$
+      - examples$
+formatters:
+  enable:
     - gofmt
-
-linters-settings:
-  forbidigo:
-    forbid:
-      - os.Exit
-      - log.Fatal.*
-
-  lll:
-    line-length: 150
-
-issues:
-  exclude-rules:
-    - path: main.go
-      linters:
-        - forbidigo
+  exclusions:
+    generated: lax
+    paths:
+      - third_party$
+      - builtin$
+      - examples$

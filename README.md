@@ -1,21 +1,25 @@
 # go-work
 
-Go simple project.
+Go a simple project.
+
+## Requirements
+
+- [mise](https://mise.jdx.dev/)
 
 ## Getting Started
 
 ```bash
-make setup
+mise run setup
 ```
 
 To run:
 
 ```bash
-make run
+mise run dev
 ```
 
 To build:
 
 ```bash
-make
+mise run build
 ```
