@@ -1,10 +1,14 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:best-practices"],
-
-  "regexManagers": [
+  "extends": [
+    "config:best-practices"
+  ],
+  "customManagers": [
     {
-      "fileMatch": ["^mise\\.toml$"],
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/^mise\\.toml$/"
+      ],
       "matchStrings": [
         "go install (?<depName>[^@\\s]+)@(?<currentValue>[\\dA-Za-z.+-]+)"
       ],
@@ -13,12 +17,17 @@
       "packageNameTemplate": "{{{depName}}} (mise)"
     }
   ],
-
   "packageRules": [
     {
-      "matchManagers": ["gomod"],
-      "matchDepNames": ["go"],
-      "matchDepTypes": ["golang"],
+      "matchManagers": [
+        "gomod"
+      ],
+      "matchDepNames": [
+        "go"
+      ],
+      "matchDepTypes": [
+        "golang"
+      ],
       "rangeStrategy": "bump"
     }
   ]
