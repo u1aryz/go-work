@@ -13,8 +13,7 @@
         "go install (?<depName>[^@\\s]+)@(?<currentValue>[\\dA-Za-z.+-]+)"
       ],
       "datasourceTemplate": "go",
-      "depNameTemplate": "{{{depName}}} (mise)",
-      "packageNameTemplate": "{{{depName}}} (mise)"
+      "depNameTemplate": "{{{depName}}}"
     }
   ],
   "packageRules": [
