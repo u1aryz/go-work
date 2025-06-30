@@ -3,19 +3,6 @@
   "extends": [
     "config:best-practices"
   ],
-  "customManagers": [
-    {
-      "customType": "regex",
-      "managerFilePatterns": [
-        "/^mise\\.toml$/"
-      ],
-      "matchStrings": [
-        "go install (?<depName>[^@\\s]+)@(?<currentValue>[\\dA-Za-z.+-]+)"
-      ],
-      "datasourceTemplate": "go",
-      "depNameTemplate": "{{{depName}}}"
-    }
-  ],
   "packageRules": [
     {
       "matchManagers": [
