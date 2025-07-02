@@ -9,6 +9,7 @@ Go a simple project.
 ## Getting Started
 
 ```bash
+mise install
 mise run setup
 ```
 
