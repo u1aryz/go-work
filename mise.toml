@@ -1,16 +1,15 @@
 [tools]
+air = "1.62.0"
 go = "1.24.4"
+golangci-lint = "2.2.1"
+lefthook = "1.11.14"
 
 [tasks.setup]
-description = "Install development tools and set up git hooks"
-run = [
-  "go install github.com/air-verse/air@latest",
-  "go install github.com/golangci/golangci-lint/v2/cmd/golangci-lint@latest",
-  "go install github.com/evilmartians/lefthook@latest",
-  "lefthook install",
-]
+description = "Set up git hooks"
+run = "lefthook install"
 
 [tasks.clean]
+confirm = "Remove build artifacts?"
 description = "Remove build artifacts"
 run = "rm -rf dist/"
 
