@@ -4,9 +4,8 @@ go = "1.24.4"
 golangci-lint = "2.2.1"
 lefthook = "1.11.16"
 
-[tasks.setup]
-description = "Set up git hooks"
-run = "lefthook install"
+[hooks]
+postinstall = "lefthook install"
 
 [tasks.clean]
 confirm = "Remove build artifacts?"

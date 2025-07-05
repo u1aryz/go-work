@@ -4,13 +4,12 @@ Go a simple project.
 
 ## Requirements
 
-- [mise](https://mise.jdx.dev/)
+- [mise](https://mise.jdx.dev/) (`mise settings experimental=true`)
 
 ## Getting Started
 
 ```bash
 mise install
-mise run setup
 ```
 
 To run:
