@@ -1,6 +1,6 @@
 module github.com/u1aryz/go-work
 
-go 1.25.3
+go 1.25.4
 
 require github.com/k0kubun/pp v3.0.1+incompatible
 
