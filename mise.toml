@@ -1,3 +1,6 @@
+[settings]
+experimental = true
+
 [tools]
 go = "1.25.5"
 "go:github.com/air-verse/air" = "1.63.6"

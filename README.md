@@ -4,7 +4,7 @@ Go a simple project.
 
 ## Requirements
 
-- [mise](https://mise.jdx.dev/) (`mise settings experimental=true`)
+- [mise](https://mise.jdx.dev/)
 
 ## Getting Started
 
