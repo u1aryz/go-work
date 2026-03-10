@@ -5,7 +5,7 @@ experimental = true
 go = "1.26.0"
 "go:github.com/air-verse/air" = "1.64.5"
 "go:github.com/evilmartians/lefthook/v2" = "2.1.2"
-"go:github.com/golangci/golangci-lint/v2/cmd/golangci-lint" = "2.10.1"
+"go:github.com/golangci/golangci-lint/v2/cmd/golangci-lint" = "2.11.3"
 
 [hooks]
 postinstall = "lefthook install"
