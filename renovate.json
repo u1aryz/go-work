@@ -3,6 +3,7 @@
   "extends": [
     "config:best-practices"
   ],
+  "minimumReleaseAge": "3 days",
   "platformAutomerge": false,
   "packageRules": [
     {
